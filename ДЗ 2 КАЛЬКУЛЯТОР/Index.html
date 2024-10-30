@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор ДЗ 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="attent" id="attention"></div>
+        <div class="calc-body">
+            <div class="calc-header">
+                <input type="text" class="calc-exp" id="exp" value="25*25">
+            </div>
+            <div class="calc-cont-buttn">
+                <div class="calc-buttn">
+                    <button type="button" class="one vvod" id="1" onclick="enter(this)">1</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="two vvod" id="2" onclick="enter(this)">2</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="three vvod" id="3" onclick="enter(this)">3</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="plus vvod" id="+" onclick="enter(this)">+</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="four vvod" id="4" onclick="enter(this)">4</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="five vvod" id="5" onclick="enter(this)">5</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="six vvod" id="6" onclick="enter(this)">6</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="minus vvod" id="-" onclick="enter(this)">-</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="seven vvod" id="7" onclick="enter(this)">7</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="eight vvod" id="8" onclick="enter(this)">8</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="nine vvod" id="9" onclick="enter(this)">9</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="multiply vvod" id="*" onclick="enter(this)">*</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="share vvod" id="0" onclick="enter(this)">0</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="share vvod" id="/" onclick="enter(this)">/</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="equally" id="=">=</button>
+                </div>
+                <div class="calc-buttn">
+                    <button type="button" class="clear" id="C">C</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont-history">
+            <div class="history-header"><h2>История операций</h2></div>
+            <div class="history-content" id="historyCont"></div>
+            <div class="buttn-clear">
+                <button class="history-clear" id="CH">Очистить историю</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js-calk.js"></script>
+</body>
+</html>
